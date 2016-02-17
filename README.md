@@ -3,8 +3,6 @@
 ```javascript
 
 var gulp = require('gulp');
-var gulp-restart = require('gulp-restart');
-
 
 gulp.task('watch', function() {
 

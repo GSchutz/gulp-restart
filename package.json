@@ -10,8 +10,12 @@
     "type": "git",
     "url": "https://github.com/GSchutz/gulp-restart"
   },
-  "author": "GSchutz",
-  "license": "ISC",
+  "author": {
+    "name": "Guilherme Schutz",
+    "email": "guilherme@gschutz.com",
+    "url": "http://gschutz.com"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GSchutz/gulp-restart/issues"
   },

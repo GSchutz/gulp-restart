@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.7.2
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/home/guilherme/workspace/projects/gulp-restart',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /home/guilherme/.npm/gulp-restart/0.1.0/package.tgz not in flight; packing
+10 verbose correctMkdir /home/guilherme/.npm correctMkdir not in flight; initializing
+11 info lifecycle gulp-restart@0.1.0~prepublish: gulp-restart@0.1.0
+12 silly lifecycle gulp-restart@0.1.0~prepublish: no script for prepublish, continuing
+13 verbose tar pack [ '/home/guilherme/.npm/gulp-restart/0.1.0/package.tgz',
+13 verbose tar pack   '/home/guilherme/workspace/projects/gulp-restart' ]
+14 verbose tarball /home/guilherme/.npm/gulp-restart/0.1.0/package.tgz
+15 verbose folder /home/guilherme/workspace/projects/gulp-restart
+16 verbose addLocalTarball adding from inside cache /home/guilherme/.npm/gulp-restart/0.1.0/package.tgz
+17 verbose correctMkdir /home/guilherme/.npm correctMkdir not in flight; initializing
+18 silly cache afterAdd gulp-restart@0.1.0
+19 verbose afterAdd /home/guilherme/.npm/gulp-restart/0.1.0/package/package.json not in flight; writing
+20 verbose correctMkdir /home/guilherme/.npm correctMkdir not in flight; initializing
+21 verbose afterAdd /home/guilherme/.npm/gulp-restart/0.1.0/package/package.json written
+22 silly publish { name: 'gulp-restart',
+22 silly publish   version: '0.1.0',
+22 silly publish   description: 'A simple module to reload the entire gulp process',
+22 silly publish   main: 'index.js',
+22 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+22 silly publish   repository:
+22 silly publish    { type: 'git',
+22 silly publish      url: 'git+https://github.com/GSchutz/gulp-restart.git' },
+22 silly publish   author: { name: 'GSchutz' },
+22 silly publish   license: 'MIT',
+22 silly publish   bugs: { url: 'https://github.com/GSchutz/gulp-restart/issues' },
+22 silly publish   homepage: 'https://github.com/GSchutz/gulp-restart',
+22 silly publish   readme: '# Usage\n\n```javascript\n\nvar gulp = require(\'gulp\');\nvar gulp-restart = require(\'gulp-restart\');\n\n\ngulp.task(\'watch\', function() {\n\n  var restart = require(\'gulp-restart\');\n\n  // will restart the entire gulp on every file change\n  gulp.watch([\'src/**/*\'], restart);\n\n});\n\n```\n\nThat\'s it.\n',
+22 silly publish   readmeFilename: 'README.md',
+22 silly publish   gitHead: 'af86d46f6210f1d09cd296799064fc707ac21734',
+22 silly publish   _id: 'gulp-restart@0.1.0',
+22 silly publish   _shasum: '1beff7aa9470b8bfdcae519bce0983db3bc36b53',
+22 silly publish   _from: '.' }
+23 verbose getPublishConfig undefined
+24 silly mapToRegistry name gulp-restart
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/gulp-restart
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/guilherme/.npm/gulp-restart/0.1.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/gulp-restart
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 11:55:55
+33 verbose request id 346aa8061c6e16d0
+34 http request PUT https://registry.npmjs.org/gulp-restart
+35 http 403 https://registry.npmjs.org/gulp-restart
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Wed, 17 Feb 2016 13:55:56 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-iad2124-IAD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1455717356.014394,VS0,VE918' }
+37 verbose request invalidating /home/guilherme/.npm/registry.npmjs.org/gulp-restart on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : gulp-restart
+39 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at Request.emit (events.js:98:17)
+39 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at Request.emit (events.js:117:20)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:963:12)
+39 verbose stack     at IncomingMessage.emit (events.js:117:20)
+39 verbose stack     at _stream_readable.js:944:16
+40 verbose statusCode 403
+41 verbose pkgid gulp-restart
+42 verbose cwd /home/guilherme/workspace/projects/gulp-restart
+43 error Linux 3.13.0-53-generic
+44 error argv "node" "/usr/bin/npm" "publish"
+45 error node v0.10.37
+46 error npm  v3.7.2
+47 error code E403
+48 error "You cannot publish over the previously published version 0.1.0." : gulp-restart
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
